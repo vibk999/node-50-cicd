@@ -21,10 +21,10 @@ jobs:
           Đăng nhập vào docker hub
           # -u: tên tài khoản docker hub
           # -p: mật khóa tài khoản docker hub
-        run: docker login -u vulebaolong -p ${{secrets.TOKEN}}
+        run: docker login -u vibk999 -p ${{secrets.TOKEN}}
 
       - name: build image
-        run: docker build -t vulebaolong/img-cyber_community:latest .
+        run: docker build -t vibk999/img-cyber_community:latest .
 
       - name: push đưa image lên docker hub
-        run: docker push vulebaolong/img-cyber_community:latest
+        run: docker push vibk999/img-cyber_community:latest
